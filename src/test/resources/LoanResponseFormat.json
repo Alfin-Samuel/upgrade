@@ -1,0 +1,160 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "firstName": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "integer"
+    },
+    "userUuid": {
+      "type": "string"
+    },
+    "authenticationLevel": {
+      "type": "string"
+    },
+    "actorIds": {
+      "type": "array",
+      "items": [
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    "loanApplications": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "uuid": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "productType": {
+              "type": "string"
+            },
+            "sourceSystem": {
+              "type": "string"
+            },
+            "purpose": {
+              "type": "null"
+            },
+            "createDate": {
+              "type": "string"
+            },
+            "offerAmount": {
+              "type": "null"
+            },
+            "initiator": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "uuid",
+            "status",
+            "productType",
+            "sourceSystem",
+            "purpose",
+            "createDate",
+            "offerAmount",
+            "initiator"
+          ]
+        }
+      ]
+    },
+    "loansInReview": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "uuid": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "productType": {
+              "type": "string"
+            },
+            "hasOpenBackendCounter": {
+              "type": "boolean"
+            },
+            "purpose": {
+              "type": "string"
+            },
+            "createDate": {
+              "type": "string"
+            },
+            "postIssuanceStatus": {
+              "type": "null"
+            },
+            "addon": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "id",
+            "uuid",
+            "status",
+            "productType",
+            "hasOpenBackendCounter",
+            "purpose",
+            "createDate",
+            "postIssuanceStatus",
+            "addon"
+          ]
+        }
+      ]
+    },
+    "loanAccountSummaryAto": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "loanAccountNumber": {
+              "type": "null"
+            },
+            "postIssuanceLoanStatus": {
+              "type": "null"
+            },
+            "daysPastDue": {
+              "type": "integer"
+            },
+            "loanProductType": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "loanAccountNumber",
+            "postIssuanceLoanStatus",
+            "daysPastDue",
+            "loanProductType"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "firstName",
+    "userId",
+    "userUuid",
+    "authenticationLevel",
+    "actorIds",
+    "loanApplications",
+    "loansInReview",
+    "loanAccountSummaryAto"
+  ]
+}

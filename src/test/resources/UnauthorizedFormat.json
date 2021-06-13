@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "integer"
+    },
+    "codeName": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "retryable": {
+      "type": "boolean"
+    },
+    "type": {
+      "type": "string"
+    },
+    "httpStatus": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "code",
+    "codeName",
+    "message",
+    "retryable",
+    "type",
+    "httpStatus"
+  ]
+}

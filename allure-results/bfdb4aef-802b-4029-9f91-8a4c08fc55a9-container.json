@@ -1,0 +1,1 @@
+{"uuid":"bfdb4aef-802b-4029-9f91-8a4c08fc55a9","name":"uitest.OpenPage","children":["9c4e4581-5c2a-4eb2-8ea1-8d6c55c8e308"],"befores":[{"name":"testPageSetup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1623352144450,"stop":1623352144455}],"afters":[],"links":[],"start":1623352144427,"stop":1623352150775}
