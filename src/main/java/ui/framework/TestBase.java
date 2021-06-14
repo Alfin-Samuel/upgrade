@@ -21,29 +21,27 @@ public class TestBase {
 
     /**
      * This method will open the URL mentioned in the input.properties file
+     *
      * @param browser This parameter is used to mention browser in which URL need to be maintained
      * @throws IOException
      */
 
-    public void openURL(String browser) throws IOException, IOException {
+    public void openURL(String browser) throws IOException {
         String currentDir = System.getProperty("user.dir");
-        File file = new File(currentDir+"/input.properties");
-        String canonicalPath=file.getCanonicalPath();
-        Properties prop=new Properties();
-        FileInputStream fis=new FileInputStream(canonicalPath);
+        File file = new File(currentDir + "/input.properties");
+        String canonicalPath = file.getCanonicalPath();
+        Properties prop = new Properties();
+        FileInputStream fis = new FileInputStream(canonicalPath);
         prop.load(fis);
-        String browserToUse=browser;
+        String browserToUse = browser;
 
-        if(browserToUse.equalsIgnoreCase("firefox"))
-        {
+        if (browserToUse.equalsIgnoreCase("firefox")) {
             WebDriverManager.getInstance(DriverManagerType.FIREFOX).setup();
             driver = new FirefoxDriver();
 
-        }
-        else if (browserToUse.equalsIgnoreCase("chrome"))
-        {
+        } else if (browserToUse.equalsIgnoreCase("chrome")) {
             WebDriverManager.getInstance(DriverManagerType.CHROME).setup();
-            driver=new ChromeDriver();
+            driver = new ChromeDriver();
             driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 
         }
@@ -53,8 +51,8 @@ public class TestBase {
 
     public WebDriver getDriver() {
         return driver;
-
     }
+
     public void setDriver(WebDriver driver) {
         this.driver = driver;
     }
@@ -62,22 +60,26 @@ public class TestBase {
     public boolean isExists(WebElement e) throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOf(e));
-        boolean result=false;
-        if(e.isDisplayed()){
-            result=true;}
+        boolean result = false;
+        if (e.isDisplayed()) {
+            result = true;
+        }
         return result;
     }
-    public static String email(){
-        String name="candidate"+System.currentTimeMillis();
-        String email=name+"@upgrade-challenge.com";
+
+    public static String email() {
+        String name = "candidate" + System.currentTimeMillis();
+        String email = name + "@upgrade-challenge.com";
         return email;
     }
+
     public void click(WebElement e) throws InterruptedException {
-        if(isExists(e)){
+        if (isExists(e)) {
             e.click();
         }
     }
-    public void enterText(WebElement e,String text) throws InterruptedException {
+
+    public void enterText(WebElement e, String text) throws InterruptedException {
         e.clear();
         e.sendKeys(text);
 

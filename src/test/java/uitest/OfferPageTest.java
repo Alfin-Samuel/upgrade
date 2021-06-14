@@ -1,10 +1,6 @@
 package uitest;
 
-import org.apache.commons.lang3.RandomStringUtils;
-import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 import ui.framework.TestBase;
 import ui.pages.*;
@@ -14,7 +10,8 @@ import java.io.IOException;
 
 import static api.endpointfunctionalities.LoginFunctionality.DEFAULT_PASSWORD;
 
-public class OpenPage extends TestBase {
+@Listeners(ui.framework.Listeners.class)
+public class OfferPageTest extends TestBase {
     public StartPage startPage;
     public PersonalPage personalPage;
     public IncomePage incomePage;
@@ -26,9 +23,7 @@ public class OpenPage extends TestBase {
     public static final String LOGIN_ENDPOINT = "/portal/login";
     public static final String DEFAULT_ENVIRONMENT = "https://www.credify.tech";
 
-    @BeforeClass
-    public void testPageSetup() throws IOException {
-
+    public  OfferPageTest() throws IOException {
         openURL("chrome");
         startPage = new StartPage(getDriver());
         personalPage = new PersonalPage(getDriver());
@@ -43,19 +38,20 @@ public class OpenPage extends TestBase {
     @Test(groups = {"regression"})
     public void openBrowserTest() throws InterruptedException {
 
+        String email = emailOfNewlyCreatedUser();
+        LoanApprovalDetails approvedDetails = offerPage.captureLoanApprovalDetails();
+        driver.navigate().to(loginPageUrl);
+        loginPage.loginToAccout(email, DEFAULT_PASSWORD);
+        LoanApprovalDetails approvedDetailsAfterLogin = offerPage.captureLoanApprovalDetails();
+        validateValuesBeforeAndAfterLogin(approvedDetails, approvedDetailsAfterLogin);
+    }
+
+    public String emailOfNewlyCreatedUser() throws InterruptedException {
         startPage.checkRateAfterEnteringValues("2000", "Debt Consolidation");
         personalPage.fillPersonalDetails();
         incomePage.enterIncomeDetails();
         String email = credentialsPage.fillCredentials();
-        Thread.sleep(10000);
-        LoanApprovalDetails approvedDetails = offerPage.captureLoanApprovalDetails();
-        driver.navigate().to(loginPageUrl);
-        loginPage.loginToAccout(email, DEFAULT_PASSWORD);
-        Thread.sleep(10000);
-        LoanApprovalDetails approvedDetailsAfterLogin = offerPage.captureLoanApprovalDetails();
-        validateValuesBeforeAndAfterLogin(approvedDetails, approvedDetailsAfterLogin);
-//        String generatedString = RandomStringUtils.randomAlphabetic(5);
-//        System.out.println(generatedString);
+        return email;
     }
 
     public void validateValuesBeforeAndAfterLogin(LoanApprovalDetails before, LoanApprovalDetails after) {
@@ -68,7 +64,7 @@ public class OpenPage extends TestBase {
         softAssert.assertAll();
     }
 
-    @AfterTest
+    @AfterSuite(alwaysRun = true)
     public void tearDown() {
         driver.close();
     }

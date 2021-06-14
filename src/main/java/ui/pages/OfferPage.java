@@ -40,11 +40,13 @@ public class OfferPage extends TestBase {
 
     public LoanApprovalDetails captureLoanApprovalDetails() throws InterruptedException {
         LoanApprovalDetails loanApprovalDetails = new LoanApprovalDetails();
-        loanApprovalDetails.setLoanAmount(loanAmountValue.getText());
-        loanApprovalDetails.setMonthlyPayment(monthlyPayment.getText());
-        loanApprovalDetails.setIntrestRate(interestRate.getText());
-        loanApprovalDetails.setTerm(term.getText());
-        loanApprovalDetails.setApr(apr.getText());
+        if(isExists(loanAmountValue)) {
+            loanApprovalDetails.setLoanAmount(loanAmountValue.getText());
+            loanApprovalDetails.setMonthlyPayment(monthlyPayment.getText());
+            loanApprovalDetails.setIntrestRate(interestRate.getText());
+            loanApprovalDetails.setTerm(term.getText());
+            loanApprovalDetails.setApr(apr.getText());
+        }
         logout();
         return loanApprovalDetails;
     }

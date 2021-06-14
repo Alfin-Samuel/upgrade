@@ -9,7 +9,7 @@
         </groups>
         <classes>
             <class name="apitest.TestLoginApi"/>
-            <class name="uitest.OpenPage"/>
+            <class name="uitest.OfferPageTest"/>
         </classes>
     </test>
 </suite>

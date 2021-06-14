@@ -1,5 +1,6 @@
 package ui.pages;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -36,8 +37,10 @@ public class PersonalPage {
     public WebElement continuePersonalInfoButton;
 
     public void fillPersonalDetails() {
-        firstNameTextBox.sendKeys("Abcd");
-        lastNameTextBox.sendKeys("lastName");
+        String firstName = RandomStringUtils.randomAlphabetic(7);
+        String lastName = RandomStringUtils.randomAlphabetic(5);
+        firstNameTextBox.sendKeys(firstName);
+        lastNameTextBox.sendKeys(lastName);
         streetTextBox.sendKeys("66");
         addressSuggestions.get(1).click();
         dobTextBox.sendKeys("12/12/1995");

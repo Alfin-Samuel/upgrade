@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="34.147" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="15"/>
+    <property name="webdriver.chrome.driver" value="/Users/alfinsamuel/.cache/selenium/chromedriver/mac64/91.0.4472.101/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.6.3_1/libexec/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="America/Toronto"/>
+    <property name="maven.conf" value="/usr/local/Cellar/maven/3.6.3_1/libexec/conf"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CA"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -P regression"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.6.3_1/libexec"/>
+    <property name="surefire.test.class.path" value="/Users/alfinsamuel/Documents/test/upgrade/target/test-classes:/Users/alfinsamuel/Documents/test/upgrade/target/classes:/Users/alfinsamuel/.m2/repository/io/qameta/allure/allure-testng/2.13.5/allure-testng-2.13.5.jar:/Users/alfinsamuel/.m2/repository/io/qameta/allure/allure-java-commons/2.13.5/allure-java-commons-2.13.5.jar:/Users/alfinsamuel/.m2/repository/io/qameta/allure/allure-model/2.13.5/allure-model-2.13.5.jar:/Users/alfinsamuel/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar:/Users/alfinsamuel/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/Users/alfinsamuel/.m2/repository/org/apache/tika/tika-core/1.20/tika-core-1.20.jar:/Users/alfinsamuel/.m2/repository/org/jooq/joor-java-8/0.9.10/joor-java-8-0.9.10.jar:/Users/alfinsamuel/.m2/repository/org/testng/testng/7.3.0/testng-7.3.0.jar:/Users/alfinsamuel/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/alfinsamuel/.m2/repository/org/apache/ant/ant/1.10.3/ant-1.10.3.jar:/Users/alfinsamuel/.m2/repository/org/apache/ant/ant-launcher/1.10.3/ant-launcher-1.10.3.jar:/Users/alfinsamuel/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/alfinsamuel/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/alfinsamuel/.m2/repository/com/google/inject/guice/4.2.2/guice-4.2.2-no_aop.jar:/Users/alfinsamuel/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/alfinsamuel/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/alfinsamuel/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:/Users/alfinsamuel/.m2/repository/org/apache/logging/log4j/log4j-core/2.11.1/log4j-core-2.11.1.jar:/Users/alfinsamuel/.m2/repository/org/apache/logging/log4j/log4j-api/2.11.1/log4j-api-2.11.1.jar:/Users/alfinsamuel/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/alfinsamuel/.m2/repository/io/rest-assured/rest-assured/4.3.3/rest-assured-4.3.3.jar:/Users/alfinsamuel/.m2/repository/org/codehaus/groovy/groovy/3.0.7/groovy-3.0.7.jar:/Users/alfinsamuel/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.7/groovy-xml-3.0.7.jar:/Users/alfinsamuel/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/alfinsamuel/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/alfinsamuel/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/alfinsamuel/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/alfinsamuel/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/alfinsamuel/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/alfinsamuel/.m2/repository/io/rest-assured/xml-path/4.3.3/xml-path-4.3.3.jar:/Users/alfinsamuel/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/alfinsamuel/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/alfinsamuel/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/alfinsamuel/.m2/repository/io/rest-assured/json-path/4.3.3/json-path-4.3.3.jar:/Users/alfinsamuel/.m2/repository/org/codehaus/groovy/groovy-json/3.0.7/groovy-json-3.0.7.jar:/Users/alfinsamuel/.m2/repository/io/rest-assured/rest-assured-common/4.3.3/rest-assured-common-4.3.3.jar:/Users/alfinsamuel/.m2/repository/io/rest-assured/json-schema-validator/4.3.3/json-schema-validator-4.3.3.jar:/Users/alfinsamuel/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/alfinsamuel/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/alfinsamuel/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/alfinsamuel/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/alfinsamuel/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/alfinsamuel/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/alfinsamuel/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/alfinsamuel/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/alfinsamuel/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/alfinsamuel/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/alfinsamuel/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/alfinsamuel/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/alfinsamuel/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.3/jackson-core-2.12.3.jar:/Users/alfinsamuel/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar:/Users/alfinsamuel/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar:/Users/alfinsamuel/.m2/repository/io/github/bonigarcia/webdrivermanager/4.4.3/webdrivermanager-4.4.3.jar:/Users/alfinsamuel/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/alfinsamuel/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/Users/alfinsamuel/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/alfinsamuel/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/alfinsamuel/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.3/httpclient5-5.0.3.jar:/Users/alfinsamuel/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.2/httpcore5-5.0.2.jar:/Users/alfinsamuel/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.2/httpcore5-h2-5.0.2.jar:/Users/alfinsamuel/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/Users/alfinsamuel/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/Users/alfinsamuel/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/alfinsamuel/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/alfinsamuel/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/alfinsamuel/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/alfinsamuel/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/alfinsamuel/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/alfinsamuel/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/alfinsamuel/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/alfinsamuel/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/alfinsamuel/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/alfinsamuel/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/alfinsamuel/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/alfinsamuel/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/alfinsamuel/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/alfinsamuel/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/alfinsamuel/.m2/repository/org/seleniumhq/selenium/selenium-server/2.25.0/selenium-server-2.25.0.jar:/Users/alfinsamuel/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.47/bcprov-jdk15on-1.47.jar:/Users/alfinsamuel/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.47/bcpkix-jdk15on-1.47.jar:/Users/alfinsamuel/.m2/repository/mx4j/mx4j-tools/3.0.1/mx4j-tools-3.0.1.jar:/Users/alfinsamuel/.m2/repository/org/mortbay/jetty/servlet-api-2.5/6.1.9/servlet-api-2.5-6.1.9.jar:/Users/alfinsamuel/.m2/repository/org/seleniumhq/selenium/jetty-repacked/7.6.1/jetty-repacked-7.6.1.jar:/Users/alfinsamuel/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/alfinsamuel/.m2/repository/commons-codec/commons-codec/1.6/commons-codec-1.6.jar:/Users/alfinsamuel/.m2/repository/com/google/guava/guava/30.1.1-jre/guava-30.1.1-jre.jar:/Users/alfinsamuel/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/alfinsamuel/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/alfinsamuel/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/alfinsamuel/.m2/repository/org/checkerframework/checker-qual/3.8.0/checker-qual-3.8.0.jar:/Users/alfinsamuel/.m2/repository/com/google/errorprone/error_prone_annotations/2.5.1/error_prone_annotations-2.5.1.jar:/Users/alfinsamuel/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/alfinsamuel"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-01-19"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/alfinsamuel/Documents/test/upgrade"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="15.0.2+7"/>
+    <property name="user.name" value="alfinsamuel"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="11.2.3"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/alfinsamuel/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/lp/csjcpzd16_vfjx4cm5y2y8hc0000gn/T/"/>
+    <property name="java.version" value="15.0.2"/>
+    <property name="user.dir" value="/Users/alfinsamuel/Documents/test/upgrade"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/alfinsamuel/Documents/test/upgrade"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.library.path" value="/Users/alfinsamuel/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="N/A"/>
+    <property name="java.vm.version" value="15.0.2+7"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.6.3_1/libexec/bin/m2.conf"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.6.3_1/libexec/lib/jansi-native"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="59.0"/>
+  </properties>
+  <testcase name="verifyInternalServerError" classname="apitest.TestLoginApi" time="1.495">
+    <system-out><![CDATA[Body:
+{
+    "username": "invalid",
+    "password": "123Password",
+    "recaptchaToken": "coding_challenge"
+}
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 17867
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun. 13, 2021 11:25:22 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 41131
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun. 13, 2021 11:25:27 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jun. 13, 2021 11:25:30 P.M. ui.framework.Listeners onStart
+INFO: ===========================================================================================
+Jun. 13, 2021 11:25:30 P.M. ui.framework.Listeners onStart
+INFO: Test got started ------> Users and GiftCards
+Jun. 13, 2021 11:25:32 P.M. ui.pages.IncomePage enterIncomeDetails
+INFO: Entering the income Details .........
+Jun. 13, 2021 11:25:33 P.M. ui.pages.CredentialsPage fillCredentials
+INFO: Filing the User Credentials
+Jun. 13, 2021 11:25:33 P.M. ui.pages.CredentialsPage fillCredentials
+INFO: Email for the User -----> candidate1623641133025@upgrade-challenge.com
+Jun. 13, 2021 11:25:33 P.M. ui.pages.CredentialsPage fillCredentials
+INFO: Entered Credentials and checked rate
+Jun. 13, 2021 11:25:33 P.M. apitest.TestLoginApi createNewUser
+INFO: User Name ----> candidate1623641133025@upgrade-challenge.com
+Jun. 13, 2021 11:25:35 P.M. api.utilities.ValidationHelpers validateStatusCode
+INFO: <======Response======>
+Jun. 13, 2021 11:25:35 P.M. api.utilities.ValidationHelpers validateStatusCode
+INFO: {
+    "timestamp": "2021-06-14T03:25:34.954Z",
+    "status": 500,
+    "error": "Internal Server Error",
+    "message": "",
+    "path": "/api/brportorch/v2/login"
+}
+Jun. 13, 2021 11:25:35 P.M. ui.framework.Listeners onTestSuccess
+INFO: Test Passed
+Jun. 13, 2021 11:25:35 P.M. ui.framework.Listeners onTestSuccess
+INFO: :-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-)
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUnauthorisedLogin" classname="apitest.TestLoginApi" time="1.142">
+    <system-out><![CDATA[Body:
+{
+    "username": "invalid",
+    "password": "123Password",
+    "recaptchaToken": "coding_challenge"
+}
+Headers:		x-cf-source-id=coding-challenge
+				x-cf-corr-id=bb24bb2a-c74e-11eb-b8bc-0242ac130003
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+]]></system-out>
+    <system-err><![CDATA[Jun. 13, 2021 11:25:36 P.M. api.utilities.ValidationHelpers validateStatusCode
+INFO: <======Response======>
+Jun. 13, 2021 11:25:36 P.M. api.utilities.ValidationHelpers validateStatusCode
+INFO: {
+    "code": 100039,
+    "codeName": "INVALID_CREDENTIALS",
+    "message": "We're sorry, the credentials you've provided are incorrect. Please try again",
+    "retryable": false,
+    "type": "NORMAL",
+    "httpStatus": "UNAUTHORIZED"
+}
+Jun. 13, 2021 11:25:36 P.M. ui.framework.Listeners onTestSuccess
+INFO: Test Passed
+Jun. 13, 2021 11:25:36 P.M. ui.framework.Listeners onTestSuccess
+INFO: :-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-)
+]]></system-err>
+  </testcase>
+  <testcase name="verifyValidLoginTest" classname="apitest.TestLoginApi" time="0.873">
+    <system-out><![CDATA[Body:
+{
+    "username": "candidate1623641133025@upgrade-challenge.com",
+    "password": "123Password",
+    "recaptchaToken": "coding_challenge"
+}
+Headers:		x-cf-source-id=coding-challenge
+				x-cf-corr-id=bb24bb2a-c74e-11eb-b8bc-0242ac130003
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+]]></system-out>
+    <system-err><![CDATA[Jun. 13, 2021 11:25:37 P.M. api.utilities.ValidationHelpers validateStatusCode
+INFO: <======Response======>
+Jun. 13, 2021 11:25:37 P.M. api.utilities.ValidationHelpers validateStatusCode
+INFO: {
+    "firstName": "DIJciNZ",
+    "userId": 10091243,
+    "userUuid": "3519a942-84f1-45f9-85c8-acedff55ab9e",
+    "authenticationLevel": "FULL",
+    "actorIds": [
+        
+    ],
+    "loanApplications": [
+        {
+            "id": 100974371,
+            "uuid": "207fa89d-58d0-4e2e-b9e0-0b369da91ffa",
+            "status": "NEW",
+            "productType": "PERSONAL_LOAN",
+            "sourceSystem": "BORROWER_FUNNEL_V2",
+            "purpose": null,
+            "createDate": "2021-06-14T03:25:35.262Z",
+            "offerAmount": null,
+            "initiator": "ACTOR"
+        }
+    ],
+    "loansInReview": [
+        
+    ],
+    "loanAccountSummaryAto": [
+        
+    ]
+}
+Jun. 13, 2021 11:25:37 P.M. ui.framework.Listeners onTestSuccess
+INFO: Test Passed
+Jun. 13, 2021 11:25:37 P.M. ui.framework.Listeners onTestSuccess
+INFO: :-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-)
+]]></system-err>
+  </testcase>
+  <testcase name="openBrowserTest" classname="uitest.OfferPageTest" time="16.257">
+    <system-err><![CDATA[Jun. 13, 2021 11:25:38 P.M. ui.pages.IncomePage enterIncomeDetails
+INFO: Entering the income Details .........
+Jun. 13, 2021 11:25:39 P.M. ui.pages.CredentialsPage fillCredentials
+INFO: Filing the User Credentials
+Jun. 13, 2021 11:25:39 P.M. ui.pages.CredentialsPage fillCredentials
+INFO: Email for the User -----> candidate1623641139461@upgrade-challenge.com
+Jun. 13, 2021 11:25:40 P.M. ui.pages.CredentialsPage fillCredentials
+INFO: Entered Credentials and checked rate
+Jun. 13, 2021 11:25:53 P.M. ui.framework.Listeners onTestSuccess
+INFO: Test Passed
+Jun. 13, 2021 11:25:53 P.M. ui.framework.Listeners onTestSuccess
+INFO: :-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-):-)
+]]></system-err>
+  </testcase>
+</testsuite>

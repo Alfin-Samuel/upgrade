@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-06-13T23:25:30 EDT" name="API Test Suite" finished-at="2021-06-13T23:25:53 EDT" duration-ms="22900">
+    <groups>
+      <group name="regression">
+        <method signature="OfferPageTest.openBrowserTest()[pri:0, instance:uitest.OfferPageTest@147097ad]" name="openBrowserTest" class="uitest.OfferPageTest"/>
+        <method signature="TestLoginApi.verifyInternalServerError()[pri:0, instance:apitest.TestLoginApi@6f69e2d8]" name="verifyInternalServerError" class="apitest.TestLoginApi"/>
+        <method signature="TestLoginApi.verifyUnauthorisedLogin()[pri:0, instance:apitest.TestLoginApi@6f69e2d8]" name="verifyUnauthorisedLogin" class="apitest.TestLoginApi"/>
+        <method signature="TestLoginApi.verifyValidLoginTest()[pri:0, instance:apitest.TestLoginApi@6f69e2d8]" name="verifyValidLoginTest" class="apitest.TestLoginApi"/>
+      </group> <!-- regression -->
+    </groups>
+    <test started-at="2021-06-13T23:25:30 EDT" name="Users and GiftCards" finished-at="2021-06-13T23:25:53 EDT" duration-ms="22900">
+      <class name="apitest.TestLoginApi">
+        <test-method is-config="true" signature="createNewUser()[pri:0, instance:apitest.TestLoginApi@6f69e2d8]" started-at="2021-06-13T23:25:30 EDT" name="createNewUser" finished-at="2021-06-13T23:25:33 EDT" duration-ms="2865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewUser -->
+        <test-method signature="verifyInternalServerError()[pri:0, instance:apitest.TestLoginApi@6f69e2d8]" started-at="2021-06-13T23:25:33 EDT" name="verifyInternalServerError" finished-at="2021-06-13T23:25:35 EDT" duration-ms="1493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInternalServerError -->
+        <test-method signature="verifyUnauthorisedLogin()[pri:0, instance:apitest.TestLoginApi@6f69e2d8]" started-at="2021-06-13T23:25:35 EDT" name="verifyUnauthorisedLogin" finished-at="2021-06-13T23:25:36 EDT" duration-ms="1141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnauthorisedLogin -->
+        <test-method signature="verifyValidLoginTest()[pri:0, instance:apitest.TestLoginApi@6f69e2d8]" started-at="2021-06-13T23:25:36 EDT" name="verifyValidLoginTest" finished-at="2021-06-13T23:25:37 EDT" duration-ms="873" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidLoginTest -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:apitest.TestLoginApi@6f69e2d8]" started-at="2021-06-13T23:25:53 EDT" name="closeDriver" finished-at="2021-06-13T23:25:53 EDT" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- apitest.TestLoginApi -->
+      <class name="uitest.OfferPageTest">
+        <test-method signature="openBrowserTest()[pri:0, instance:uitest.OfferPageTest@147097ad]" started-at="2021-06-13T23:25:37 EDT" name="openBrowserTest" finished-at="2021-06-13T23:25:53 EDT" duration-ms="16256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:uitest.OfferPageTest@147097ad]" started-at="2021-06-13T23:25:53 EDT" name="tearDown" finished-at="2021-06-13T23:25:53 EDT" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- uitest.OfferPageTest -->
+    </test> <!-- Users and GiftCards -->
+  </suite> <!-- API Test Suite -->
+</testng-results>
